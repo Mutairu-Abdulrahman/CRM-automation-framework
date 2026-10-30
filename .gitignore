@@ -1,0 +1,48 @@
+# Local environment / secrets (never commit)
+.env
+.credentials
+.env.local
+*.pem
+*.key
+
+# Node
+node_modules/
+package-lock.json
+
+# Playwright
+/reports/playwright-report/
+/reports/blob-report/
+/.features-gen/
+playwright/.cache/
+playwright/.auth/
+
+# IDE
+.vscode/workspace.code-workspace
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+
+# Logs
+*.log
+log/
+
+# Temporary files
+.scratch/
+.temp/
+/tmp/
+
+# Credentials and generated reports (do not commit)
+Test_cred_file.txt
+STAGING_ACCOUNT_INVESTIGATION.md
+playwright-report/
+reports/
+test-results/
+
+# Local Claude Code settings and runtime locks
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
